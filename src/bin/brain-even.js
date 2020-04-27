@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import printName from '../src/cli.js';
+import brainEven from '../evenGame.js';
 
 console.log('Welcome to the Brain Games!');
-printName();
+
+brainEven();
