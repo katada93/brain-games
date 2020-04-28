@@ -4,4 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ### brain-even
-[![asciicast](https://asciinema.org/a/IlTokzhh62SPvweSfXY3QaEdh.svg)](https://asciinema.org/a/IlTokzhh62SPvweSfXY3QaEdh)
+[![asciicast](https://asciinema.org/a/RAvSS3pMQr1cJvJf9dF9n08WU.svg)](https://asciinema.org/a/RAvSS3pMQr1cJvJf9dF9n08WU)
+
+### brain-calc
+[![asciicast](https://asciinema.org/a/ynUBuoNRTzmYhYBocQRgl3eZy.svg)](https://asciinema.org/a/ynUBuoNRTzmYhYBocQRgl3eZy)
