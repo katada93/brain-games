@@ -4,7 +4,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ### brain-even
-[![asciicast](https://asciinema.org/a/RAvSS3pMQr1cJvJf9dF9n08WU.svg)](https://asciinema.org/a/RAvSS3pMQr1cJvJf9dF9n08WU)
+[![asciicast](https://asciinema.org/a/h0beei5eMUpdyazN1d8HRhdsC.svg)](https://asciinema.org/a/h0beei5eMUpdyazN1d8HRhdsC)
 
 ### brain-calc
-[![asciicast](https://asciinema.org/a/ynUBuoNRTzmYhYBocQRgl3eZy.svg)](https://asciinema.org/a/ynUBuoNRTzmYhYBocQRgl3eZy)
+[![asciicast](https://asciinema.org/a/eMwigIo246j2T9nRtTTeyAV9W.svg)](https://asciinema.org/a/eMwigIo246j2T9nRtTTeyAV9W)
+
+### brain-gcd
+[![asciicast](https://asciinema.org/a/vlonvn2m17uoQZmDSS1MgmAiA.svg)](https://asciinema.org/a/vlonvn2m17uoQZmDSS1MgmAiA)

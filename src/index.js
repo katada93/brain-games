@@ -1,4 +1,3 @@
-const randomNumber = () => (Math.floor(Math.random() * 15));
+const getRandomNumber = (max) => (Math.floor(Math.random() * Math.floor(max + 1)));
 
-
-export default randomNumber;
+export default getRandomNumber;

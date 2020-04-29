@@ -6,7 +6,8 @@
   "type": "module",
   "bin": {
     "brain-even": "src/bin/brain-even.js",
-    "brain-calc": "src/bin/brain-calc.js"
+    "brain-calc": "src/bin/brain-calc.js",
+    "brain-gcd": "src/bin/brain-gcd.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
