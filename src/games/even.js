@@ -10,7 +10,7 @@ const brainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let i = 0;
   while (i <= 3) {
-    const number = getRandomNumber(20);
+    const number = getRandomNumber(0, 20);
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== isEven(number)) {

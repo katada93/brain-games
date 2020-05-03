@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import getRandomNumber from '../index.js';
 
-const getRandomOperator = () => Math.floor(Math.random() * 3);
 const operators = ['+', '-', '*'];
 
 const calc = (num1, num2, operator) => {
@@ -24,9 +23,9 @@ const brainCalc = () => {
   console.log('What is the result of the expression?');
   let i = 0;
   while (i <= 3) {
-    const number1 = getRandomNumber(20);
-    const number2 = getRandomNumber(20);
-    const operator = operators[getRandomOperator()];
+    const number1 = getRandomNumber(0, 20);
+    const number2 = getRandomNumber(0, 20);
+    const operator = operators[getRandomNumber(0, 2)];
     console.log(`Question: ${number1} ${operator} ${number2}`);
     const userAnswer = Number(readlineSync.question('Your answer: '));
     if (userAnswer !== calc(number1, number2, operator)) {

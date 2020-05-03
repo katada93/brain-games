@@ -10,8 +10,8 @@ const brainGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
   while (i <= 3) {
-    const number1 = getRandomNumber(20);
-    const number2 = getRandomNumber(20);
+    const number1 = getRandomNumber(0, 20);
+    const number2 = getRandomNumber(0, 20);
     console.log(`Question: ${number1} ${number2}`);
     const userAnswer = Number(readlineSync.question('Your answer: '));
     if (userAnswer !== getGcd(number1, number2)) {
