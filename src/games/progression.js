@@ -1,5 +1,6 @@
-import readlineSync from 'readline-sync';
-import getRandomNumber from '../index.js';
+import { getRandomNumber, engine } from '../index.js';
+
+const gameRule = 'What number is missing in the progression?';
 
 const makeProgression = (begin, step) => {
   const result = [];
@@ -10,32 +11,13 @@ const makeProgression = (begin, step) => {
   return result;
 };
 
-const brainProg = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('What number is missing in the progression?');
-  let i = 0;
-  while (i <= 3) {
-    const count = getRandomNumber(2, 5);
-    const start = getRandomNumber(1, 30);
-    const getMissing = () => makeProgression(start, count)[count - 1] + count;
-    console.log(`Question: ${makeProgression(start, count).join(' ')}`);
-    const userAnswer = Number(readlineSync.question('Your answer: '));
-    if (userAnswer !== getMissing()) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${getMissing()}"`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-    if (userAnswer === getMissing()) {
-      console.log('Correct!');
-      i += 1;
-      if (i === 3) {
-        console.log(`Congratulatsions, ${name}!`);
-        return;
-      }
-    }
-  }
+const makeGame = () => {
+  const count = getRandomNumber(2, 5);
+  const start = getRandomNumber(1, 30);
+  const question = `Question: ${makeProgression(start, count).join(' ')}`;
+  const getMissing = () => makeProgression(start, count)[count - 1] + count;
+  const answer = String(getMissing());
+  return [question, answer];
 };
 
-export default brainProg;
+export default () => engine(makeGame, gameRule);
