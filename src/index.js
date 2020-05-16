@@ -1,15 +1,13 @@
 import readlineSync from 'readline-sync';
 
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
-
-const engine = (game, rule) => {
+const engine = (getData, rule) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
-  let round = 0;
-  while (round <= 3) {
-    const [question, answer] = game();
+  let countOfRound = 0;
+  while (countOfRound < 3) {
+    const [question, answer] = getData();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== answer) {
@@ -19,13 +17,10 @@ const engine = (game, rule) => {
     }
     if (userAnswer === answer) {
       console.log('Correct!');
-      round += 1;
-      if (round === 3) {
-        console.log(`Congratulatsions, ${userName}!`);
-        return;
-      }
+      countOfRound += 1;
     }
   }
+  console.log(`Congratulatsions, ${userName}!`);
 };
 
-export { getRandomNumber, engine };
+export default engine;

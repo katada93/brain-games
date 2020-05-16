@@ -1,10 +1,12 @@
-import { getRandomNumber, engine } from '../index.js';
+import engine from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const makeProgression = (begin, step) => {
+const getProgression = (begin, step) => {
   const result = [];
-  for (let i = begin; result.length < 10; i += step) {
+  const progressionLength = 10;
+  for (let i = begin; result.length < progressionLength; i += step) {
     result.push(i);
   }
   result[step] = '..';
@@ -14,9 +16,9 @@ const makeProgression = (begin, step) => {
 const makeGame = () => {
   const count = getRandomNumber(2, 5);
   const start = getRandomNumber(1, 30);
-  const question = `Question: ${makeProgression(start, count).join(' ')}`;
-  const getMissing = () => makeProgression(start, count)[count - 1] + count;
-  const answer = String(getMissing());
+  const question = `Question: ${getProgression(start, count).join(' ')}`;
+  const getMissingValue = () => getProgression(start, count)[count - 1] + count;
+  const answer = String(getMissingValue());
   return [question, answer];
 };
 
