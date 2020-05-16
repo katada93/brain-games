@@ -7,7 +7,7 @@ const isEven = (n) => n % 2 === 0;
 
 const makeGame = () => {
   const number = getRandomNumber(0, 20);
-  const question = `Question: ${number}`;
+  const question = `${number}`;
   const answer = isEven(number) ? 'yes' : 'no';
   return [question, answer];
 };

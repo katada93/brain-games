@@ -16,7 +16,7 @@ const getProgression = (begin, step) => {
 const makeGame = () => {
   const count = getRandomNumber(2, 5);
   const start = getRandomNumber(1, 30);
-  const question = `Question: ${getProgression(start, count).join(' ')}`;
+  const question = `${getProgression(start, count).join(' ')}`;
   const getMissingValue = () => getProgression(start, count)[count - 1] + count;
   const answer = String(getMissingValue());
   return [question, answer];

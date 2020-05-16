@@ -8,7 +8,7 @@ const getGcd = (a, b) => (b === 0 ? a : getGcd(b, a % b));
 const makeGame = () => {
   const number1 = getRandomNumber(0, 20);
   const number2 = getRandomNumber(0, 20);
-  const question = `Question: ${number1} ${number2}`;
+  const question = `${number1} ${number2}`;
   const answer = String(getGcd(number1, number2));
   return [question, answer];
 };
