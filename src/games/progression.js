@@ -10,15 +10,15 @@ const getProgression = (begin, step) => {
     result.push(i);
   }
   result[step] = '..';
-  return result;
+  return result.join(' ');
 };
 
 const makeGame = () => {
   const count = getRandomNumber(2, 5);
   const start = getRandomNumber(1, 30);
-  const question = `${getProgression(start, count).join(' ')}`;
-  const getMissingValue = () => getProgression(start, count)[count - 1] + count;
-  const answer = String(getMissingValue());
+  const question = `${getProgression(start, count)}`;
+  const missingValue = start + count * count;
+  const answer = String(missingValue);
   return [question, answer];
 };
 
