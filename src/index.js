@@ -5,8 +5,9 @@ const engine = (getData, rule) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
-  let countOfRound = 0;
-  while (countOfRound < 3) {
+  let index = 0;
+  const countOfRound = 3;
+  while (index < countOfRound) {
     const [question, answer] = getData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -15,10 +16,8 @@ const engine = (getData, rule) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-    if (userAnswer === answer) {
-      console.log('Correct!');
-      countOfRound += 1;
-    }
+    console.log('Correct!');
+    index += 1;
   }
   console.log(`Congratulatsions, ${userName}!`);
 };

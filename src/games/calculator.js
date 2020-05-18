@@ -23,7 +23,7 @@ const makeGame = () => {
   const number2 = getRandomNumber(0, 20);
   const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `${number1} ${operator} ${number2}`;
-  const answer = String(calc(number1, number2, operator));
+  const answer = calc(number1, number2, operator).toString();
   return [question, answer];
 };
 

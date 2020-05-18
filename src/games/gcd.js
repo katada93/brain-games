@@ -9,7 +9,7 @@ const makeGame = () => {
   const number1 = getRandomNumber(0, 20);
   const number2 = getRandomNumber(0, 20);
   const question = `${number1} ${number2}`;
-  const answer = String(getGcd(number1, number2));
+  const answer = getGcd(number1, number2).toString();
   return [question, answer];
 };
 
