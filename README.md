@@ -14,14 +14,14 @@ Games:
 * Determination of a prime number.
 * Determination of the greatest common divisor.
 
+---
+
 ### Install
 ```bash
 $ make install
 $ make publish
 $ npm link
 ```
-
----
 
 #### Run first game
 ```bash
