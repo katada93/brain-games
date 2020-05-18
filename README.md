@@ -14,9 +14,7 @@ Games:
 * Determination of a prime number.
 * Determination of the greatest common divisor.
 
----
-
-## Install
+### Install
 ```bash
 $ make install
 $ make publish
@@ -25,32 +23,32 @@ $ npm link
 
 ---
 
-### Run first game
+#### Run first game
 ```bash
 $ brain-calc
 ```
 [![asciicast](https://asciinema.org/a/eMwigIo246j2T9nRtTTeyAV9W.svg)](https://asciinema.org/a/eMwigIo246j2T9nRtTTeyAV9W)
 
-### Run second game
+#### Run second game
 ```bash
 $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/4vy3HFQFle0T9PR2XH1PvpffD.svg)](https://asciinema.org/a/4vy3HFQFle0T9PR2XH1PvpffD)
 
-### Run third game
+#### Run third game
 ```bash
 $ brain-even
 ```
 [![asciicast](https://asciinema.org/a/h0beei5eMUpdyazN1d8HRhdsC.svg)](https://asciinema.org/a/h0beei5eMUpdyazN1d8HRhdsC)
 
-### Run fourth game
+#### Run fourth game
 ```bash
 $ brain-prime
 ```
 [![asciicast](https://asciinema.org/a/lJBT5J3CY3Tx5KQL0XyrbNIvu.svg)](https://asciinema.org/a/lJBT5J3CY3Tx5KQL0XyrbNIvu)
 
 
-### Run fifth game
+#### Run fifth game
 ```bash
 $ brain-gcd
 ```
