@@ -6,8 +6,8 @@ const engine = (getData, rule) => {
   console.log(`Hello, ${userName}!`);
   console.log(rule);
   let index = 0;
-  const countOfRound = 3;
-  while (index < countOfRound) {
+  const countOfRounds = 3;
+  while (index < countOfRounds) {
     const [question, answer] = getData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
